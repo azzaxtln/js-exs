@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <script>
       const nome = prompt("Digite seu nome completo");
       const nomeSemEspacos = nome.replace(/\s/g, "");
 
-
-      document.body.innerHTML += `Seu nome é: ${nome} <br />`;
-      document.body.innerHTML += `Seu nome tem ${nomeSemEspacos.length} letras <br />`;
-      document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]} <br />`;
-      document.body.innerHTML += `O primeiro índice da letra "o" no seu nome é: ${nome.indexOf(
-        "o"
-      )} <br />`;
-      document.body.innerHTML += `O último índice da letra "o" no seu nome é: ${nome.lastIndexOf(
-        "o"
-      )} <br />`;
-      document.body.innerHTML += `As últimas três letras do seu nome são: ${nome.slice(-3)} <br />`;
-      document.body.innerHTML += `As palavras do seu nome são: ${nome.split(" ")} <br />`;
-      document.body.innerHTML += `Seu nome com as letras maiúsculas: ${nome.toUpperCase()} <br />`;
-      document.body.innerHTML += `Seu nome com as letras minúsculas: ${nome.toLowerCase()} <br />`;
+      document.body.innerHTML += `Seu nome é: <strong>${nome}</strong> <br />`;
+      document.body.innerHTML += `Seu nome tem <strong>${nomeSemEspacos.length}</strong> letras <br />`;
+      document.body.innerHTML += `A segunda letra do seu nome é:<strong> ${nome[1]}</strong> <br />`;
+      document.body.innerHTML += `O primeiro índice da letra "o" no seu nome é:<strong>
+             ${nome.indexOf("o")}
+        </strong> <br />`;
+      document.body.innerHTML += `O último índice da letra "o" no seu nome é: <strong>
+            ${nome.lastIndexOf("o")}
+        </strong> <br />`;
+      document.body.innerHTML += `As últimas três letras do seu nome são: <strong>
+            ${nome.slice(-3)}
+        </strong> <br />`;
+      document.body.innerHTML += `As palavras do seu nome são: <strong>
+            ${nome.split(" ")}
+        </strong> <br />`;
+      document.body.innerHTML += `Seu nome com as letras maiúsculas: <strong>${nome.toUpperCase()}</strong> <br />`;
+      document.body.innerHTML += `Seu nome com as letras minúsculas: <strong>${nome.toLowerCase()}</strong> <br />`;
     </script>
   </body>
 </html>
